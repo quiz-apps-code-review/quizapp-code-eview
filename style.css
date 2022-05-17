@@ -1,0 +1,16 @@
+body{
+    margin: 0px;
+    padding:0px;
+    background-color: rgba(142, 217, 235, 0.85) ;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+main{
+    height: 784px;
+width: 571px;
+
+border-radius: 0px;
+color: #FFFFFF;
+border: solid red 2px;
+}
