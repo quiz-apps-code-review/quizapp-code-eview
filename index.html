@@ -5,13 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>quiz app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-    
-</main>
+    <div class="container-start">
+        <div class="title">
+            <h1>JavaScript Quiz</h1>
+        </div>
+        <div class="description">
+            <P> Évaluez vos connaissances en JavaScript en répondant aux questions que nous avons spécialement sélectionnées pour vous.
+                C'est fun et c'est gratuit. </P>
+        </div>
+        <div class="register">
+            <form action="">
+                <div class="input-group">
+                    <label for="name">Nom</label>
+                    
+                    <input type="text"  id="name" class="name"  placeholder="Nom d'utilisateur">
+                    <span class="error-name"> </span>
+                    
+                </div>
+                <div class="input-group">
+                    <label for="mail">Email</label>
+                   
+                        <input type="text" id="mail" placeholder="Addresse mail ">
+                        <span class="error-mail"></span>
+                    
+                </div>
+               
+  
+                <div class="btns">
+                    <button class="btn-start" type="submit" value="submit">commencer</button>
+                </div>
+            </form>
+        </div>
+    </div>
 
+
+    <div class="container-questions">
+        <div class="question">
+            <div class="quiz">Quel est le type d'un fichier javascript ?</div>
+            <div class="count">
+                <span class="quiz-count">Question 1/15</span>
+                <span class="count time">30</span>
+            </div>
+            <div class="timer">
+                <div class="rebours"></div>
+            </div>
+            
+        </div>
+        <div class="answers">
+            <form action="">
+               
+               <div class="answer-group">
+                    <input type="radio" id="1" name="reponse" value="1">
+                    <label for="1">reponse1</label>
+                </div>
+                <div class="answer-group" >
+                    <input type="radio" id="2" name="reponse" value="2">
+                    <label for="2">reponse2</label>
+            </div>
+                    <div class="answer-group" >
+                    <input type="radio" id="3" name="reponse" value="3">
+                    <label for="3">reponse3</label>
+                </div>
+                    <div class="answer-group" >
+                    <input type="radio" id="4" name="reponse" value="4">
+                    <label for="4">reponse4</label>
+                </div>
+         
+                <div class="btns">
+                    <button class="btn-quit">Quitter</button>
+                    <button class="btn-next">Suivant</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <div class="container-result">
+        <div class="player">
+            <div class="player-name">  JOEL </div>
+            <div class="player-mail"><p>joeltondozi@gmail.com</p></div>
+        </div>
+
+        <div class="result">
+            <div class="icones">
+                <i class="fa-regular fa-circle-xmark "></i>
+            </div>
+            <div class="scores">
+                <span class="score">14/15</span>
+            </div>
+        </div>
+        <div class="btns">
+            <button class="btn-home">Accueil</button>
+        </div>
+    </div>
 
 
   <script src="app.js"></script>  
