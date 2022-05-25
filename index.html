@@ -31,7 +31,7 @@
                 <div class="input-group">
                     <label for="mail">Email</label>
                    
-                        <input type="text" id="mail" placeholder="Addresse mail ">
+                        <input type="text" id="mail" class="mail" placeholder="Addresse mail ">
                         <span class="error-mail"></span>
                     
                 </div>
@@ -50,7 +50,7 @@
             <div class="quiz">Quel est le type d'un fichier javascript ?</div>
             <div class="count">
                 <span class="quiz-count">Question 1/15</span>
-                <span class="count time">30</span>
+                <span class="count-time">60</span>
             </div>
             <div class="timer">
                 <div class="rebours"></div>
@@ -59,12 +59,23 @@
         </div>
         <div class="answers">
             <form action="" class="reponses">
-               
                <div class="answer-group">
-                    <input type="radio" id="1" name="reponse" value="1"  >
-                    <label for="1">reponse1</label>
+                    <input type="radio" id="id1" name="reponse" value="1"  >
+                    <label for="id1">reponse1</label>
                 </div>
-               
+                <div class="answer-group" >
+                    <input type="radio" id="id2" name="reponse" value="2">
+                    <label for="id2">reponse2</label>
+                </div>
+                <div class="answer-group" >
+                    <input type="radio" id="id3" name="reponse" value="3">
+                    <label for="id3">reponse3</label>
+                </div>
+
+                <div class="answer-group" >
+                    <input type="radio" id="id4" name="reponse" value="4">
+                    <label for="id4">reponse4</label>
+                </div>
          
                 <div class="btns">
                     <button class="btn-quit">Quitter</button>
@@ -82,11 +93,11 @@
 
         <div class="result">
             <div class="icones">
-                <i class="fa-regular fa-circle-xmark "></i>
+                <i class="fa-regular fa-circle-xmark success "></i>
             </div>
             <div class="scores">
-                <span class="score">14/15</span>
-            </div>
+                <span class="score" id="score">14/15</span>
+            </div
         </div>
         <div class="btns">
             <button class="btn-home">Accueil</button>
